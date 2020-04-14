@@ -1,3 +1,4 @@
 target/**
 .metals/**
 problems/target/**
+project/target/active.json
