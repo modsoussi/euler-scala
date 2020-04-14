@@ -22,12 +22,18 @@ class Eight(s: String, n: Int) extends Problem {
       i+=1 // looking at substring that starts at i+1
 
       val seq = s.substring(i, i + n)
-      println(s"Looking at sequence $seq")
+      // println(s"Looking at sequence $seq")
 
-      div = s.charAt(i - 1).toString.toInt
-      mult = s.charAt(i + n - 1).toString.toInt
+      // div = s.charAt(i - 1).toString.toInt
+      // mult = s.charAt(i + n - 1).toString.toInt
 
-      current = current * mult / div
+      // if (div == 0) {
+      //   current = seq.split("").map(c => c.toInt).reduce((x, y) => x*y)
+      // } else {     
+      //   current = current * mult / div
+      // }
+
+      current = seq.split("").map(c => c.toInt).reduce((x, y) => x*y)
       if (current > clargest) {
         clargest = current
         sequence = seq
