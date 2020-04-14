@@ -4,25 +4,6 @@ package euler.problems
  * Find the smallest positive number evenly divisible by all numbers 1-20
  */
 class Five extends Problem {
-
-  /**
-    * Returns true iff n is a prime number
-    *
-    * @param n
-    * @return
-    */
-  def prime(n: Int): Boolean = {
-    if (n == 1) return false
-
-    var i = 2;
-    while (i*i < n) {
-      if (n % i == 0) return false
-
-      i+=1
-    }
-
-    return true
-  }
   
   /**
     * returns the greatest common divisor of n and m
