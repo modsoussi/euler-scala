@@ -7,7 +7,7 @@ class Three(n: Long) extends Problem {
     if (n == 1) return false
     
     var j = 2
-    while (j*j < n) {
+    while (j*j <= n) {
       if (n % j == 0) return false
       j += 1
     }
