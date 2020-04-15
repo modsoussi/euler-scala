@@ -49,7 +49,7 @@ class EightOptimized(s: String, n: Int) extends Problem {
 
     // initialize largest to take the value of the first n digits of s
     var sequence = s.substring(0, n)
-    var current: Long = sequence.split("").map(c => c.toInt).reduce((x, y) => x*y)
+    var current = sequence.split("").map(c => c.toLong).reduce((x, y) => x*y)
     var clargest = current
 
     var start = OffsetDateTime.now().toInstant().toEpochMilli();
