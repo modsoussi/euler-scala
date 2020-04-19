@@ -4,7 +4,7 @@ import problems._
 
 object Main {
   def main(args: Array[String]) {
-    var p = new Twelve()
+    var p = new Thirteen()
 
     p.run()
   }
