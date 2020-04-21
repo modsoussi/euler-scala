@@ -1,11 +1,12 @@
 package euler.problems
 
+import scala.math.BigInt
+
 class Sixteen extends Problem {
   def run() {
-    var p = 1L
+    var p = BigInt(1)
     for (i <- 1 to 1000) {
-      p *= 2L
-      println(s"2^$i=$p")
+      p *= BigInt(2)
     }
 
     println(p.toString().split("").map(d => d.toLong).sum)
