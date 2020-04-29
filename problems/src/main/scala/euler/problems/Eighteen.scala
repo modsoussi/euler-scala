@@ -14,14 +14,17 @@ class Eighteen(t: String) extends Problem {
     }
   }
 
-  def run() {
-    _parse()
-
+  def _print() {
     for (i <- 0 until _size) {
       for (j <- 0 until _size) {
         print(f"${_g(i)(j)}%2d ")
       }
       println
     }
+  }
+
+  def run() {
+    _parse()
+    _print()
   }
 }
