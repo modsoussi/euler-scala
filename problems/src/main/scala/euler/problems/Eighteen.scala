@@ -26,5 +26,7 @@ class Eighteen(t: String) extends Problem {
   def run() {
     _parse()
     _print()
+
+    
   }
 }
